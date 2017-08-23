@@ -10,11 +10,11 @@ class EntriesController < ApplicationController
 	end
 
 	def create
-		respond_with Entry.create(params[:Entry])
+		respond_with Entry.create(params[:entry])
 	end
 
 	def update
-		respond_with Entry.update(params[:id],params[:Entry])
+		respond_with Entry.update(params[:id],params[:entry])
 	end
 
 	def destroy
